@@ -1,0 +1,31 @@
+@use "./variables" as *;
+@use "./colors" as *;
+
+progress {
+	background: var(--navigator-color-palette-goldendriedfruit-source);
+}
+
+progress[value]::-webkit-progress-value {
+	background: var(--navigator-color-palette-goldendriedfruit-source);
+}
+
+progress[value]::-moz-progress-bar {
+	background: var(--navigator-color-palette-goldendriedfruit-source);
+}
+
+progress[value]::-ms-fill {
+	background: var(--navigator-color-palette-goldendriedfruit-source);
+	border: none;
+}
+
+progress[value]::-webkit-progress-bar {
+	background: var(--additional-colors-100-white);
+}
+
+progress[value]::-moz-progress-bar {
+	background: var(--additional-colors-100-white);
+}
+
+progress[value] {
+	background: var(--additional-colors-100-white);
+}

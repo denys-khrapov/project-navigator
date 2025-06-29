@@ -1,0 +1,22 @@
+.tabs {
+
+	&__navigation {
+		display: flex;
+	}
+
+	&__title {
+		border: 1px solid #eee;
+		padding: toRem(10) toRem(15);
+		border-radius: toRem(5);
+
+		&._tab-active {
+			border: 1px solid #000;
+		}
+	}
+
+	&__content {
+		border: 1px solid #eee;
+		padding: toRem(10) toRem(15);
+	}
+
+}

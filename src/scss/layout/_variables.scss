@@ -1,0 +1,15 @@
+$minWidth: 320;
+$maxWidth: 1920;
+$maxWidthContainer: 1176;
+$containerPadding: 104;
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+$pc: $containerWidth + px;
+$tablet: 991.98px;
+$mobile: 767.98px;
+$mobileSmall: 479.98px;
+
+$responsiveType: 1;
+
+$fontFamily: "Poppins", sans-serif;
+$fontSize: 13px;

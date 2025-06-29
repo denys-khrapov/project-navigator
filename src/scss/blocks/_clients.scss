@@ -1,0 +1,54 @@
+@use "../layout/variables" as *;
+@use "../layout/colors" as *;
+@use "../layout/mixins" as *;
+@use "../layout/typography" as *;
+
+.clients {
+	background: var(--additional-colors-back-for-accent);
+	padding: 32px 0;
+
+	@media (min-width: $pc) {
+		padding: 96px 0 48px;
+	}
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		row-gap: 32px;
+
+		&:not(:last-child) {
+			margin-bottom: 32px;
+		}
+
+		@media (min-width: $pc) {
+			&:not(:last-child) {
+				margin-bottom: 48px;
+			}
+		}
+	}
+
+	&__header {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		row-gap: 4px;
+
+		@media (min-width: $pc) {
+			row-gap: 8px;
+		}
+	}
+
+	&__slider {
+		overflow: visible;
+		pointer-events: none;
+	}
+
+	&__slide {
+		width: 100%;
+		max-width: 176px;
+		min-height: 64px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

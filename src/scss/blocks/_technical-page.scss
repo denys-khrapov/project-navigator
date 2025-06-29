@@ -1,0 +1,240 @@
+@use "../layout/variables" as *;
+@use "../layout/colors" as *;
+@use "../layout/mixins" as *;
+@use "../layout/typography" as *;
+
+.technical-page {
+	.hero-two-column {
+		flex-direction: row;
+		align-items: center;
+
+		@media (min-width: $pc) {
+			max-width: 776px;
+			align-self: center;
+		}
+	}
+
+	.hero-two-column__text-block {
+		padding-right: 24px;
+
+		&::before {
+			right: 0;
+			left: unset;
+		}
+	}
+
+	.hero-two-column__image-holder {
+		max-width: 128px;
+
+		@media (min-width: $pc) {
+			max-width: 276px;
+			height: 276px;
+		}
+	}
+
+	.hero-two-column__right-col {
+		max-width: 648px;
+		order: 1;
+
+		@media (min-width: $pc) {
+			max-width: 476px;
+		}
+	}
+
+	.hero-two-column__left-col {
+		max-width: 128px;
+		min-width: 128px;
+		order: 2;
+
+		@media (min-width: $pc) {
+			max-width: 276px;
+		}
+	}
+
+	.hero-two-column__description {
+		margin-top: 16px;
+
+		@media (min-width: $pc) {
+			&::before {
+				display: block;
+			}
+		}
+	}
+}
+
+.links-two-column {
+	display: flex;
+	flex-direction: column;
+	row-gap: 24px;
+
+	&__header {
+		color: var(--navigator-color-palette-amazon-skyline-900);
+		font-size: 13px;
+		font-weight: 600;
+		line-height: 1.4;
+
+		@media (min-width: $pc) {
+			font-size: 16px;
+			line-height: 1.7;
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		row-gap: 24px;
+	}
+
+	&__card-holder {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 16px;
+		row-gap: 8px;
+
+		@media (min-width: $pc) {
+			column-gap: 24px;
+		}
+	}
+
+	&__list-holder {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 16px;
+		row-gap: 8px;
+
+		@media (min-width: $pc) {
+			column-gap: 24px;
+		}
+	}
+
+	.card-services {
+		min-width: 256px;
+		flex: 1 0 0;
+		border-radius: 1px;
+		border: 0;
+		transition: background 0.3s ease 0s;
+
+		&--orange {
+			.card-services__title {
+				color: var(--navigator-color-palette-goldendriedfruit-300);
+			}
+
+			@media (any-hover: hover) {
+				&:hover {
+					background: #ffedda;
+
+					.card-services__title {
+						color: var(--navigator-color-palette-goldendriedfruit-400);
+					}
+
+					.card-services__text-holder p {
+						color: var(--navigator-color-palette-pearl-white-800);
+					}
+
+					.card-services__icon-holder {
+						background: var(--navigator-color-palette-goldendriedfruit-400);
+					}
+				}
+			}
+		}
+
+		&--gray {
+			.card-services__title {
+				color: var(--navigator-color-palette-amazon-skyline-700);
+			}
+
+			@media (any-hover: hover) {
+				&:hover {
+					background: var(--additional-colors-light-blue);
+
+					.card-services__title {
+						color: var(--navigator-color-palette-amazon-skyline-800);
+					}
+
+					.card-services__text-holder p {
+						color: var(--navigator-color-palette-amazon-skyline-700);
+					}
+
+					.card-services__icon-holder {
+						background: var(--navigator-color-palette-amazon-skyline-800);
+					}
+				}
+			}
+		}
+
+		&--silver {
+			.card-services__title {
+				color: var(--navigator-color-palette-amazon-resin-700);
+			}
+
+			@media (any-hover: hover) {
+				&:hover {
+					background: #eaeaea;
+
+					.card-services__title {
+						color: var(--navigator-color-palette-amazon-resin-900);
+					}
+
+					.card-services__text-holder p {
+						color: var(--navigator-color-palette-amazon-skyline-700);
+					}
+
+					.card-services__icon-holder {
+						background: var(--navigator-color-palette-amazon-resin-900);
+					}
+				}
+			}
+		}
+
+		&__inner {
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-start;
+			min-height: 68px;
+			column-gap: 12px;
+			padding: 15px 24px 15px 16px;
+		}
+
+		&__icon-holder {
+			flex-shrink: 0;
+			transition: background 0.3s ease 0s;
+
+			@media (min-width: $pc) {
+				width: 26px;
+				height: 26px;
+
+				img {
+					width: 18px;
+					height: 18px;
+				}
+			}
+		}
+
+		&__title {
+			transition: color 0.3s ease 0s;
+
+			@media (min-width: $pc) {
+				font-size: 13px;
+				font-weight: 600;
+				line-height: 1.4;
+			}
+		}
+	}
+}
+
+.list-services {
+	min-width: 256px;
+	flex: 1 0 0;
+
+	@media (min-width: $pc) {
+		padding: 16px;
+	}
+
+	&__title {
+		@media (min-width: $pc) {
+			font-size: 16px;
+			line-height: 1.7;
+		}
+	}
+
+}

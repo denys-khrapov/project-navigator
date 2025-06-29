@@ -1,0 +1,349 @@
+@font-face {
+	font-family: "icons";
+	src: url("../fonts/icons.woff?c3412l") format("woff"), url("../fonts/icons.svg?c3412l#icons") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^="_icon-"]::before,
+[class^="_icon-"]::after,
+[class*=" _icon-"]::before,
+[class*=" _icon-"]::after {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: "icons" !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+._icon-AnchorSimple:before {
+	content: "\e900";
+}
+
+._icon-ArrowDown:before {
+	content: "\e901";
+}
+
+._icon-ArrowFatUp:before {
+	content: "\e902";
+}
+
+._icon-ArrowLeft:before {
+	content: "\e903";
+}
+
+._icon-ArrowRight:before {
+	content: "\e904";
+}
+
+._icon-ArrowsCounterClockwise:after {
+	content: "\e905";
+}
+
+._icon-ArrowUP:before {
+	content: "\e906";
+}
+
+._icon-arrow-up:before {
+	content: "\e907";
+}
+
+._icon-Bell:before {
+	content: "\e908";
+}
+
+._icon-BookmarkSimple:before {
+	content: "\e909";
+}
+
+._icon-Broadcast:before {
+	content: "\e90a";
+}
+
+._icon-CaretDown-1:before {
+	content: "\e90b";
+}
+
+._icon-CaretDown:after {
+	content: "\e90c";
+}
+
+._icon-CaretLeft-1:before {
+	content: "\e90d";
+}
+
+._icon-CaretLeft:before {
+	content: "\e90e";
+}
+
+._icon-CaretRight-2:before {
+	content: "\e90f";
+}
+
+._icon-CaretRight:after {
+	content: "\e910";
+}
+
+._icon-CaretUp-1:after {
+	content: "\e911";
+}
+
+._icon-CaretUp:before {
+	content: "\e912";
+}
+
+._icon-ChartBar:before {
+	content: "\e913";
+}
+
+._icon-ChartLineUp-1:before {
+	content: "\e914";
+}
+
+._icon-ChartLineUp:before {
+	content: "\e915";
+}
+
+._icon-ChatText:before {
+	content: "\e916";
+}
+
+._icon-Circle:before {
+	content: "\e917";
+}
+
+._icon-CloudArrowUp:before {
+	content: "\e918";
+}
+
+._icon-Clutch-1:before {
+	content: "\e919";
+}
+
+._icon-Crown:before {
+	content: "\e91a";
+}
+
+._icon-Cursor:before {
+	content: "\e91b";
+}
+
+._icon-Envelope:before {
+	content: "\e91c";
+}
+
+._icon-Equals:before {
+	content: "\e91d";
+}
+
+._icon-Eye:before {
+	content: "\e91e";
+}
+
+._icon-Facebook---Original:before {
+	content: "\e91f";
+}
+
+._icon-facebook:before {
+	content: "\e920";
+}
+
+._icon-FlyingSaucer:before {
+	content: "\e921";
+}
+
+._icon-FolderSimple:before {
+	content: "\e922";
+}
+
+._icon-Gauge:before {
+	content: "\e923";
+}
+
+._icon-GearSix:before {
+	content: "\e924";
+}
+
+._icon-GoogleLogo:before {
+	content: "\e925";
+}
+
+._icon-Graph:before {
+	content: "\e926";
+}
+
+._icon-Handshake:before {
+	content: "\e927";
+}
+
+._icon-Helium:before {
+	content: "\e928";
+}
+
+._icon-HouseLine:before {
+	content: "\e929";
+}
+
+._icon-ImageSquare:before {
+	content: "\e92a";
+}
+
+._icon-instagram:before {
+	content: "\e92b";
+}
+
+._icon-Instagram_logo_2016-1:before {
+	content: "\e92c";
+}
+
+._icon-Lightbulb:before {
+	content: "\e92d";
+}
+
+._icon-Lightning-2:before {
+	content: "\e92e";
+}
+
+._icon-Lightning:before {
+	content: "\e92f";
+}
+
+._icon-Link:before {
+	content: "\e930";
+}
+
+._icon-LinkedIn---Original:before {
+	content: "\e931";
+}
+
+._icon-MagnifyingGlass-1:before {
+	content: "\e932";
+}
+
+._icon-MagnifyingGlass:before {
+	content: "\e933";
+}
+
+._icon-MathOperations:before {
+	content: "\e934";
+}
+
+._icon-Minus:before {
+	content: "\e935";
+}
+
+._icon-Package:before {
+	content: "\e936";
+}
+
+._icon-Pause:before {
+	content: "\e937";
+}
+
+._icon-Percent:before {
+	content: "\e938";
+}
+
+._icon-Phone:after {
+	content: "\e939";
+}
+
+._icon-Play:before {
+	content: "\e93a";
+}
+
+._icon-Plus:before {
+	content: "\e93b";
+}
+
+._icon-PushPin:after {
+	content: "\e93c";
+}
+
+._icon-ShareFat:after {
+	content: "\e93d";
+}
+
+._icon-ShoppingCart:before {
+	content: "\e93e";
+}
+
+._icon-Smiley:before {
+	content: "\e93f";
+}
+
+._icon-SpeakerSimpleHigh:before {
+	content: "\e940";
+}
+
+._icon-SpeakerSimpleX:before {
+	content: "\e941";
+}
+
+._icon-Spotify---Original:before {
+	content: "\e942";
+}
+
+._icon-SpotifyLogo:before {
+	content: "\e943";
+}
+
+._icon-Star:before {
+	content: "\e944";
+}
+
+._icon-TextAlignCenter:before {
+	content: "\e945";
+}
+
+._icon-TiktokLogo:before {
+	content: "\e946";
+}
+
+._icon-Tote:before {
+	content: "\e947";
+}
+
+._icon-ToteSimple:before {
+	content: "\e948";
+}
+
+._icon-twitter:before {
+	content: "\e949";
+}
+
+._icon-Users:before {
+	content: "\e94a";
+}
+
+._icon-UserSwitch:before {
+	content: "\e94b";
+}
+
+._icon-WhatsappLogo:before {
+	content: "\e94c";
+}
+
+._icon-X:before {
+	content: "\e94d";
+}
+
+._icon-X1:before {
+	content: "\e94e";
+}
+
+._icon-X2:before {
+	content: "\e94f";
+}
+
+._icon-YouTube---Original:before {
+	content: "\e950";
+}

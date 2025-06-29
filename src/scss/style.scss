@@ -1,0 +1,34 @@
+@forward "./includes/normalize";
+
+@forward "./layout/colors";
+@forward "./layout/variables";
+@forward "./layout/mixins";
+@forward "./layout/typography";
+@forward "./layout/base";
+@forward "./layout/common";
+@forward "./layout/buttons";
+@forward "./layout/links";
+@forward "./layout/swiper";
+@forward "./layout/progress-bar";
+@forward "./layout/spollers";
+@forward "./layout/icons";
+
+
+@forward 'blocks/header';
+@forward 'blocks/hero';
+@forward 'blocks/about';
+@forward 'blocks/cta';
+@forward 'blocks/clients';
+@forward 'blocks/cases';
+@forward "blocks/article";
+@forward 'blocks/text-image';
+@forward 'blocks/team';
+@forward 'blocks/news-podcast';
+@forward 'blocks/footer';
+@forward 'blocks/contact-us';
+@forward 'blocks/fancy-modal';
+@forward 'blocks/page-nav';
+@forward 'blocks/profile';
+@forward 'blocks/technical-page';
+@forward 'blocks/testimonials';
+@forward 'blocks/cases-archive';

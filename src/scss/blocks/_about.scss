@@ -1,0 +1,146 @@
+@use "../layout/variables" as *;
+@use "../layout/colors" as *;
+@use "../layout/mixins" as *;
+@use "../layout/typography" as *;
+
+.about {
+	padding: 64px 0;
+	background: var(--additional-colors-back-for-accent);
+
+	@media (min-width: $pc) {
+		padding: 128px 0;
+	}
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		row-gap: 32px;
+
+		@media (min-width: $pc) {
+			row-gap: 64px;
+		}
+	}
+
+	&__header {
+		display: flex;
+		flex-direction: column;
+		row-gap: 4px;
+
+		@media (min-width: $pc) {
+			row-gap: 8px;
+		}
+	}
+
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 24px;
+	}
+
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 44px;
+
+		@media (min-width: $pc) {
+			align-items: flex-start;
+			gap: 124px;
+		}
+	}
+
+	&__left-col {
+		width: 50%;
+		min-width: 256px;
+		max-width: 583px;
+		flex: 1 0 0;
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+
+		@media (min-width: $pc) {
+			width: 100%;
+			max-width: 576px;
+			flex: none;
+			gap: 48px;
+		}
+	}
+
+	&__text-block {
+		min-width: 256px;
+		flex: 1 0 0;
+		padding: 0 24px;
+		position: relative;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100%;
+			width: 1px;
+			background: var(--navigator-color-palette-amazon-skyline-100);
+		}
+
+		@media (min-width: $pc) {
+			width: calc(50% - 12px);
+			flex: none;
+		}
+	}
+
+	&__text-holder {
+		min-width: 256px;
+		flex: 1 0 0;
+
+		p {
+			&:not(:last-child) {
+				margin-bottom: 16px;
+			}
+
+			@media (min-width: $pc) {
+				&:not(:last-child) {
+					margin-bottom: 32px;
+				}
+			}
+		}
+
+		@media (min-width: $pc) {
+			width: calc(50% - 12px);
+			flex: none;
+		}
+	}
+
+	&__right-col {
+		width: 50%;
+		min-width: 256px;
+		flex: 1 0 0;
+
+		@media (min-width: $pc) {
+			position: relative;
+
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				background: url("../images/border-top-left.svg") no-repeat center;
+				background-size: 41px 41px;
+				width: 41px;
+				height: 41px;
+			}
+		}
+	}
+
+	.widget-mob {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		flex-wrap: wrap;
+		gap: 8px;
+
+		@media (min-width: $pc) {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,38 @@
+@use "../layout/variables" as *;
+@use "../layout/colors" as *;
+@use "../layout/mixins" as *;
+@use "../layout/typography" as *;
+
+.profile-page {
+	.hero-two-column {
+		column-gap: 48px;
+
+		@media (min-width: $pc) {
+			column-gap: 24px;
+		}
+	}
+
+	.hero-two-column__image-holder {
+		max-width: 100%;
+
+		@media (min-width: $pc) {
+			height: 676px;
+		}
+	}
+
+	.hero-two-column__right-col {
+		row-gap: 16px;
+	}
+
+	.hero-two-column__title {
+		&:not(:last-child) {
+			margin-bottom: 16px;
+		}
+	}
+
+	.hero-two-column__left-col {
+		@media (min-width: $pc) {
+			max-width: 476px;
+		}
+	}
+}
